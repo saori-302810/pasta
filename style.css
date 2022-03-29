@@ -1,0 +1,486 @@
+@charset "utf8";
+
+
+
+    
+
+body,h1,h2,h3,h4,h5,ul,li{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+background:rgb(255, 255, 255);
+width: 100vw;
+}
+
+/*---------ヘッダー---------*/
+header{
+background-color: rgb(248, 235, 172);
+
+
+}
+
+
+
+/*----------ヘッダー（検索フォーム）----------------*/
+.top_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.relative{
+    position: relative;
+}
+.relative button{
+    position: absolute;
+    top: 15px;
+    right: 10px;
+}
+        #sbox2{
+        
+        width: 30vw;
+        height:50px;
+        border-radius:5px;
+        border: none;
+        outline:0;
+        background:rgb(255, 255, 255);	
+        }
+        #sbtn2{/*虫眼鏡アイコン*/
+        background:none;
+        color:#666;
+        border:none;
+        font-size:20px;/*アイコンサイズ*/
+        }
+        #sbtn5:hover{
+         
+        color:#7fbfff;
+        }
+
+
+
+
+
+  
+.top_logo{
+    text-align: center;
+}
+.logo{
+width: 30vw;
+margin-left: 3vw;
+}
+li{
+list-style-type: none;
+}
+h1{
+font-size: 1.5rem;
+margin-left: 3vw;
+margin-top: -3vh;
+}
+/*--------ランキング---------*/
+
+h2{
+text-align: center;
+color: rgb(255, 192, 74);
+padding: 5vh;
+}
+
+li p{
+background-color: #fff;
+}
+
+   .slick01{
+    margin: 0 auto;
+    width: 70vw;/*画像の間の感覚*/
+    display: block;  
+    }
+    .slick01 li{
+    text-align: center;
+    margin: 0 auto;
+    }
+    
+    .mark_1 ,.mark_2,.mark_3,.mark_4,.mark_5{
+    text-align: center;
+    margin: 0 auto;
+    
+    }
+    
+    .slick-visual .slick-dots li button:before {
+        font-size: 40px;
+    }
+    
+    
+    .basil,.bolo,.soumen,.yasai,.asari{
+    text-align: center;
+    margin: 0 auto;
+    
+    }
+
+    /*----------------------------------------*/
+
+
+
+
+
+/*---------------------------カテゴリー---------------------------*/
+
+.category{
+    top: 10vh;
+    width: 100vw;
+    margin-top: 10vh;
+background-color: rgb(244, 207, 128);
+}
+
+h4{
+text-align: center;
+color: rgb(255, 255, 255);
+margin-top: 50px;
+font-size: 30px;
+}
+
+.maru-maru{
+    width: 100vw;
+   text-align: center;
+   overflow: hidden;
+}
+
+/*tabの形状*/
+.tab{
+display: flex;
+flex-wrap: wrap;
+
+
+}
+
+
+.tab li a{
+display: block;
+background:rgb(255, 255, 255);
+margin:0 2px;
+padding:10px 20px;
+}
+/*liにactiveクラスがついた時の形状*/
+.tab li.active a{
+background:rgb(255, 255, 255);
+color: rgb(230, 154, 55);
+}
+
+.material_content{
+   
+    display: flex;
+    
+    left: 30vw;
+}
+
+.material_content li{
+    margin: 0 auto;
+}
+
+
+
+/*エリアの表示非表示と形状*/
+.area {
+display: none;/*はじめは非表示*/
+opacity: 0;/*透過0*/
+background: #fff;
+padding:50px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.area.is-active {
+display: block;/*表示*/
+animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+animation-duration: 2s;
+animation-fill-mode: forwards;
+}
+
+@keyframes displayAnime{
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+
+
+
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+
+
+
+a{
+color:#333;
+text-decoration: none;
+}
+
+.wrapper{
+width:100%;
+max-width: 960px;
+margin:30px auto;
+background:#fefefe;
+}
+
+.area h3{
+font-size:1.3rem;
+margin:0 0 20px 10px;
+}
+
+.area li{
+padding: 10px; 
+text-align: center;
+
+}
+/*----------------おすすめの記事--------------*/
+.article{
+    text-align: center;
+}
+
+h5{
+    text-align: center;
+    color: rgb(255, 192, 74);
+    font-size: 30px;
+    margin-top: 10px; 
+    }
+
+
+
+.article_content{
+    text-align: center;
+    display: flex;
+       
+        justify-content: center;
+    
+}
+
+
+
+.article_content li{
+padding: 10px;
+
+
+}
+
+
+
+.back{
+    background-color: #fff;
+   margin: 10px;
+   height: 40vh;
+   width: 20vw;
+     
+}
+.back img{
+    width: 15vw;
+    margin-top: 3vh;
+
+}
+
+.article_content p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: -5px;
+  width: 23vw;
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    display:inline-block;
+margin-left: -4vw;
+    
+   
+}
+.article_content2{
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    
+}
+
+.artcle_back{
+    height: 950px;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    background-color: rgb(240, 229, 164);
+    border-radius: 10px;
+    border: 5px solid rgb(140, 139, 139);
+    width: 50%;
+  
+    margin: 0 auto;
+}
+
+.ahiru{
+    width: 50vw;
+    
+}
+
+
+/*--------------フッター-------*/
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color: rgb(248, 235, 172);
+    height: 100px;
+    display: flex;
+    padding-left: 40vw;
+    gap: 5vw;
+    }
+footer>div{
+    margin-top: 20px;
+}
+    footer p{
+        color: rgb(81, 79, 79);
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    footer small{
+        text-align: center;
+        margin-top: -10px;
+    }
+    footer ul{
+        display: flex;
+        
+    }
+
+   footer li{
+       margin-top: 5px;
+   }
+
+
+
+@media screen and (max-width: 1315px){
+    .slick01{
+    
+        width: 70vw;/*画像の間の感覚*/
+ 
+        }
+
+}
+
+@media screen and (max-width: 480px){ 
+    /* 480px以下に適用されるCSS（スマホ用） */
+
+    #sbtn2{/*虫眼鏡アイコン*/
+
+        font-size:10px;
+        top: 1vh;
+        margin-right: 3vw;
+        }
+
+    .top_logo{
+        text-align: center;
+        width: 5vw;
+    }
+    .logo{
+    width: 30vw;
+    
+    }
+    li{
+    list-style-type: none;
+    }
+    h1{
+    font-size: 0.5rem;
+    margin-left: 0;
+    width: 40vw; 
+    margin-top: -1vh;
+    }
+
+    #sbox2{
+        width: 50vw;
+        height: 3vh;
+        margin-right: 5vw;
+    }
+
+    .basil,.bolo,.soumen,.yasai,.asari{
+        width: 50vw;
+        height: 30vh;
+        
+        }
+
+    .article_content{
+        display: initial;
+    }
+
+    .article_content p{
+        display: initial;
+        width: 35vw;
+        margin-top: -2vh;
+    }
+
+    
+    footer{
+        margin-top: 20px;
+        text-align: center;
+        background-color: rgb(248, 235, 172);
+       
+        display: flex;
+        padding-left: 20vw;
+        gap: 5vw;
+        }
+
+        .sns_logo{
+
+            display: none;
+        }
+
+        .back {
+            width: 40vw;
+            height: 25vh;
+        }
+
+        .back img{
+            width: 30vw;
+            margin-top: 3vh;
+            height: 13vh;
+            margin-top: 0.5vh;
+        
+        }
+
+        .artcle_back{
+            height: 1100px;
+
+        }
+
+        .article_content p{
+            text-align: center;
+            font-size: 0.6rem;
+            margin-top: none;
+          
+            border-radius: 5px;
+            padding: 10px 25px 10px 25px;
+            display:inline-block;
+         
+        }
+
+        .ahiru{
+            width: 60vw;
+            
+        }
+
+        .material_content li{
+            font-size: 0.8rem;
+            width: 80%;
+            
+         
+        }
+
+        .material_content{
+   
+       margin-left: 5vw;
+            width: 80vw;
+        }
+
+}
+
+@media screen and (max-width: 375px){
+    .artcle_back{
+        height: 1300px;
+
+    }
+
+}
